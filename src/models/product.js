@@ -8,8 +8,17 @@ const productSchema = new Schema({
     require: true,
     minLength: 3,
   },
-  price: {
+  list_price: {
     type: Number,
+  },
+  original_price:{
+    type: Number,
+  },
+  images:[
+    {body:String}
+  ],
+  description: {
+    type:String,
   },
 });
 
