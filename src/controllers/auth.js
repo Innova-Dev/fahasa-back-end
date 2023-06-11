@@ -13,7 +13,8 @@ export const signup = async (req, res) => {
         const { email, password } = req.body;
         if (error) {
             return res.status(400).json({
-                message: error.details.map((err) => err.message),
+                status: false,
+                message: error.details[0].message,
             });
         }
 
