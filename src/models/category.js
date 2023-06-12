@@ -7,10 +7,8 @@ const categorySchema = new Schema({
     type: String,
     require: true,
     minLength: 3,
-  },
-  image: {
-    type: String,
   }
+
 });
 
 export default mongoose.model("Category", categorySchema);
